@@ -1,7 +1,22 @@
 {
-    "name": "dcode PWA Gruppe TDS (Taha Dominik Sebastian)",
-    "short_name": "dcode PWA Grp. TDS",
+    "name": "PWA Gruppe Taha Dominik Sebastian",
+    "short_name": "PWA Grp. TDS",
     "start_url": ".",
+    "scope": ".",
     "background_color": "#FED00D",
-    "theme_color": "#63CADE"
+    "theme_color": "#63CADE",
+    "display": "standalone",
+    "prefer_related_applications": true,
+    "icons": [
+         {
+             "src": "images/logoskull512.png",
+             "sizes": "512x512",
+             "type": "image/png"
+         },
+        {
+            "src": "images/logoskull192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
 }
