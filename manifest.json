@@ -2,7 +2,7 @@
     "name": "PWA Gruppe Taha Dominik Sebastian",
     "short_name": "PWA Grp. TDS",
     "start_url": ".",
-    "scope": ".",
+    /*"scope": ".",*/
     "background_color": "#FED00D",
     "theme_color": "#63CADE",
     "display": "standalone",

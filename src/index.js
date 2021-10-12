@@ -14,7 +14,7 @@ const sourceSelector = document.querySelector('#sourceSelector');
 
 window.addEventListener('load',e => {
 updateNews();
-updateSources();
+/*updateSources();*/
 });
 
 /*async function updateSources() {
@@ -26,7 +26,7 @@ updateSources();
 }
 */
 async function updateNews() {
-    const res = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2021-09-09&sortBy=publishedAt&apiKey=${apiKey}`)
+    const res = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2021-09-12&sortBy=publishedAt&apiKey=${apiKey}`)
     const json =await res.json();
 
     main.innerHTML = json.articles.map(createArticle).join('\n');
