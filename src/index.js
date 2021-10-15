@@ -25,8 +25,9 @@ updateNews();
         .map(src => `<ption value="${src.id}">${src.name}</option>`).join('\n');
 }
 */
+
 async function updateNews() {
-    const res = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2021-09-12&sortBy=publishedAt&apiKey=${apiKey}`)
+    const res = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2021-09-15&sortBy=publishedAt&apiKey=${apiKey}`)
     const json =await res.json();
 
     main.innerHTML = json.articles.map(createArticle).join('\n');
